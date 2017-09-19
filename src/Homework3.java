@@ -21,7 +21,7 @@ public class Homework3 {
         for (int i2 = 1; i2 < masive.length; i2++) {
             if (masive[i2] < min) min = masive[i2];
         }
-        System.out.println("Наименьший элемент: " + min);
+        System.out.println("min element: " + min);
 
 
 
@@ -29,7 +29,7 @@ public class Homework3 {
         for (int i3 = 1; i3 < masive.length; i3++) {
             if (masive[i3] > max) max = masive[i3];
         }
-        System.out.println("Наибольший элемент: " + max);
+        System.out.println("max element: " + max);
 
 
         int x = 5;
@@ -39,7 +39,7 @@ public class Homework3 {
                 count++;
             }
         }
-        System.out.println("Кол-во повторений = " + count);
+        System.out.println("number of repetitions = " + count);
 
 
         for (int j = 0; j < masive.length; j++) {
@@ -70,26 +70,8 @@ public class Homework3 {
             if (mincount > qwe) mincount = qwe;
             if (maxcount < qwe) maxcount = qwe;
         }
-        System.out.println("максимальное кол-во повторений чисел в массиве " + maxcount + " раз.");
-        System.out.println("минимальное кол-во повторений чисел в массиве " + mincount + " раз.");
-
-
-
-
-                 /*
-        Scanner input = new Scanner(System.in);
-        System.out.println("Размер массив: ");
-        int size = input.nextInt();
-        int array[] = new int[size];
-        System.out.println("Элементы массива:");
-        for (int i = 0; i < size; i++) {
-            array[i] = input.nextInt();
-        }
-        System.out.print ("Размер массива:");
-        for (int i = 0; i < size; i++) {
-            System.out.print (" " + array[i]);}
-      */
-
+        System.out.println("max number of repetitions in masive " + maxcount + " раз.");
+        System.out.println("min number of repetitions in masive " + mincount + " раз.");
 
     }
 }
