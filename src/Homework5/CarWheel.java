@@ -1,96 +1,21 @@
-package Homework5;
+package General;
 
-public class CarWheel {
-    private boolean Wheel;
-    private boolean NeWheel;
-    private boolean DefectedWheel;
+public class CarWheel{
 
-    public CarWheel () {
-        this.Wheel = true;
-        this.NeWheel = true;
-        this.DefectedWheel= false;
-    }
+    private boolean wheel;
+    private boolean wheelnew;
+    private boolean wheelster;
 
-    public CarWheel(boolean wheel, boolean neWheel) {
-        this.Wheel = wheel;
-        this.NeWheel = neWheel;
-        this.DefectedWheel = DefectedWheel;
+    public CarWheel() {
+        this.wheel = false;
+        this.wheelnew = false;
+        this.wheelster = true;
     }
 
-
-    public void wheel1() {
-        if (Wheel) {
-            System.out.println("Шина новая");
-        } else {
-            Wheel = true;
-            System.out.println("Шина стерта");
-        }
-    }
-    public void wheel2() {
-        if (Wheel) {
-            System.out.println("Шина не новая");
-        } else {
-            Wheel = true;
-            System.out.println("Шина не стерта");
-        }
-    }
-    public void wheel3() {
-        if (Wheel) {
-            Wheel = false;
-            System.out.println("Шина не стерта");
-        } else {
-            Wheel = true;
-            System.out.println("Шина стерта");
-        }
-    }
-    public void wheel4() {
-        if (Wheel) {
-            System.out.println("сменить шину");
-        } else {
-            Wheel = true;
-            System.out.println("шина сменена");
-        }
-    }
-    public void wheel5() {
-        if (Wheel) {
-            System.out.println("не сменять шину");
-        } else {
-            Wheel = false;
-            System.out.println("шину не сменять");
-        }
-    }
-    public void wheel6() {
-        if (Wheel) {
-            Wheel = false;
-            System.out.println("шину не сменять");
-        } else {
-            Wheel = true;
-            System.out.println("шина сменена");
-        }
-    }
-    public void wheel7() {
-        if (DefectedWheel) {
-            System.out.println("Стереть шину на 33%");
-        } else {
-            DefectedWheel = true;
-            System.out.println("Шина стерта на 33%");
-        }
-    }
-    public void wheel8() {
-        if (DefectedWheel) {
-            System.out.println("Не стерать шину на 33%");
-        } else {
-            DefectedWheel = false;
-            System.out.println("шина не стерта на 33%");
-        }
-    }
-    public void wheel9() {
-        if (DefectedWheel) {
-            DefectedWheel = false;
-            System.out.println("шина не стерта на 33%");
-        } else {
-            DefectedWheel = true;
-            System.out.println("Шина стерта на 33%");
-        }
+    public void console() {
+        System.out.println("Состояние целостности шини-" + (wheel ? "Шина стерта до 0%" : "Шина не стерта до 0%"));
+        System.out.println("Сменить шину? " + (wheelnew ? "шину не сменять" : "шина сменена"));
+        System.out.println("Состояние шини-" + (wheelster ? "шина не стерта на 5%" : "шина стерта на 5%"));
     }
 }
+
